@@ -1,2 +1,112 @@
-# Proline
-For Construction and Engineering Survey
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<base target="_self">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROLINE — Building Today for a Stronger Tomorrow</title>
+<meta name="description" content="PROLINE is a construction and engineering company in Egypt. Building today for a stronger tomorrow.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{
+--navy-950:#071120;--navy-900:#0A1628;--navy-800:#111D33;--navy-700:#1A2A45;
+--navy-600:#243B5E;--navy-500:#2E4A73;--gold-300:#F0D77B;--gold-400:#E6C75E;
+--gold-500:#D4AF37;--gold-600:#B8952A;--gold-700:#8A6A1F;--text-light:#F5F7FA;
+--text-muted:#9FB0C9;--border-dark:#1B314F;--success:#22C55E;--danger:#EF4444;--warn:#F59E0B;
+}
+*{scroll-behavior:smooth}
+body{background:var(--navy-900);color:var(--text-light);font-family:'Inter','Cairo',sans-serif;overflow-x:hidden}
+html[dir="rtl"] body,html[dir="rtl"] .font-cairo-inherit{font-family:'Cairo','Inter',sans-serif}
+.font-display{font-family:'Inter','Cairo',sans-serif}
+html[dir="rtl"] .font-display{font-family:'Cairo','Inter',sans-serif}
+.text-gold{color:var(--gold-500)}
+.text-gold-light{color:var(--gold-300)}
+.text-muted2{color:var(--text-muted)}
+.bg-gold{background:var(--gold-500)}
+.bg-gold-light{background:var(--gold-300)}
+.bg-navy-950{background:var(--navy-950)}
+.bg-navy-900{background:var(--navy-900)}
+.bg-navy-800{background:var(--navy-800)}
+.bg-navy-700{background:var(--navy-700)}
+.border-gold{border-color:var(--gold-500)}
+.border-dark{border-color:var(--border-dark)}
+.btn-gold{background:var(--gold-500);color:var(--navy-950);font-weight:700;transition:all .3s ease;border:none;cursor:pointer}
+.btn-gold:hover{background:var(--gold-400);transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,175,55,.3)}
+.btn-outline-gold{border:2px solid var(--gold-500);color:var(--gold-500);background:transparent;transition:all .3s ease;cursor:pointer}
+.btn-outline-gold:hover{background:var(--gold-500);color:var(--navy-950)}
+.btn-outline-light{border:1px solid rgba(255,255,255,.2);color:var(--text-light);background:rgba(255,255,255,.03);transition:all .3s ease;cursor:pointer}
+.btn-outline-light:hover{border-color:var(--gold-500);color:var(--gold-300)}
+.gold-divider{width:60px;height:3px;background:var(--gold-500);border-radius:3px}
+.card-surface{background:var(--navy-800);border:1px solid var(--border-dark);border-radius:12px;transition:all .3s ease}
+.card-surface:hover{border-color:var(--gold-600);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.hidden{display:none!important}
+.admin-sidebar{background:var(--navy-950);min-height:100vh;border-right:1px solid var(--border-dark)}
+html[dir="rtl"] .admin-sidebar{border-right:none;border-left:1px solid var(--border-dark)}
+.stat-card{background:var(--navy-800);border:1px solid var(--border-dark);border-radius:12px;padding:1.5rem;transition:all .3s}
+.stat-card:hover{border-color:var(--gold-600)}
+.table-row{transition:background .2s}
+.table-row:hover{background:rgba(212,175,55,.05)}
+.status-badge{display:inline-block;padding:.25rem .75rem;border-radius:9999px;font-size:.75rem;font-weight:600}
+.status-new{background:rgba(59,130,246,.15);color:#60A5FA;border:1px solid rgba(59,130,246,.3)}
+.status-review{background:rgba(245,158,11,.15);color:var(--warn);border:1px solid rgba(245,158,11,.3)}
+.status-contacted{background:rgba(139,92,246,.15);color:#A78BFA;border:1px solid rgba(139,92,246,.3)}
+.status-quoted{background:rgba(16,185,129,.15);color:#34D399;border:1px solid rgba(16,185,129,.3)}
+.status-approved{background:rgba(34,197,94,.15);color:var(--success);border:1px solid rgba(34,197,94,.3)}
+.status-rejected{background:rgba(239,68,68,.15);color:var(--danger);border:1px solid rgba(239,68,68,.3)}
+.project-card{overflow:hidden;border-radius:12px;background:var(--navy-800);border:1px solid var(--border-dark);transition:all .3s}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.4);border-color:var(--gold-600)}
+.project-card .project-img{overflow:hidden;position:relative}
+.project-card .project-img img{width:100%;height:220px;object-fit:cover;transition:transform .5s}
+.project-card:hover .project-img img{transform:scale(1.08)}
+.section-padding{padding:5rem 0}
+html[dir="rtl"] .flip-for-rtl{direction:rtl}
+html[dir="ltr"] .flip-for-rtl{direction:ltr}
+.hero-overlay{background:linear-gradient(135deg,rgba(7,17,32,.92) 0%,rgba(10,22,40,.75) 50%,rgba(17,29,51,.5) 100%)}
+.nav-link{color:var(--text-muted);transition:color .2s;cursor:pointer;font-weight:500}
+.nav-link:hover{color:var(--gold-300)}
+.admin-nav-link{display:flex;align-items:center;gap:.75rem;padding:.6875rem 1.25rem;color:var(--text-muted);border-radius:8px;transition:all .2s;cursor:pointer;font-size:.875rem;font-weight:500}
+.admin-nav-link:hover{background:rgba(212,175,55,.08);color:var(--gold-300)}
+.admin-nav-link.active{background:rgba(212,175,55,.12);color:var(--gold-400);border-right:3px solid var(--gold-500)}
+html[dir="rtl"] .admin-nav-link.active{border-right:none;border-left:3px solid var(--gold-500)}
+input,select,textarea{background:var(--navy-700);border:1px solid var(--border-dark);border-radius:8px;padding:.75rem 1rem;color:var(--text-light);width:100%;transition:border .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold-500);box-shadow:0 0 0 3px rgba(212,175,55,.1)}
+input::placeholder,textarea::placeholder{color:rgba(159,176,201,.5)}
+label{font-size:.875rem;font-weight:500;color:var(--text-muted);margin-bottom:.375rem;display:block}
+.chip{display:inline-block;padding:.25rem .75rem;border-radius:9999px;font-size:.75rem;font-weight:500;border:1px solid var(--border-dark);color:var(--text-muted);cursor:pointer;transition:all .2s;background:transparent}
+.chip:hover{border-color:var(--gold-500);color:var(--gold-300)}
+.chip.active{background:var(--gold-500);color:var(--navy-950);border-color:var(--gold-500)}
+.mobile-menu{position:fixed;top:0;right:-280px;width:280px;height:100vh;background:var(--navy-950);z-index:50;transition:right .3s ease;padding:2rem 1.5rem;overflow-y:auto}
+html[dir="rtl"] .mobile-menu{right:auto;left:-280px}
+.mobile-menu.open{right:0}
+html[dir="rtl"] .mobile-menu.open{left:0}
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:45;display:none}
+.backdrop.show{display:block}
+.gold-text-gradient{background:linear-gradient(135deg,var(--gold-300),var(--gold-500),var(--gold-600));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.demo-banner{background:repeating-linear-gradient(45deg,#2D1B08,#2D1B08 10px,#1A1205 10px,#1A1205 20px);border-bottom:1px solid var(--gold-700);color:var(--gold-300);font-size:.75rem;text-align:center;padding:.375rem .5rem;letter-spacing:.05em}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:var(--navy-900)}
+::-webkit-scrollbar-thumb{background:var(--navy-600);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:var(--gold-600)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.animate-fade-up{animation:fadeUp .8s ease forwards}
+@keyframes pulseGold{0%,100%{opacity:1}50%{opacity:.6}}
+.pulse-gold{animation:pulseGold 1.5s ease-in-out infinite}
+.testimonial-box{opacity:.5;filter:grayscale(70%)}
+.shadow-gold{box-shadow:0 0 40px rgba(212,175,55,.15)}
+.logo-mark{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--gold-400),var(--gold-600));color:var(--navy-950);font-weight:800;font-size:1.2rem}
+</style>
+</head>
+<body>
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+<i class="fas fa-flask mr-1"></i>
+<span data-i18n-key="demoBanner">Front-end Prototype — Backend integration pending. All content is placeholder editable data.</span>
+</div>
+
+<!-- ============ PUBLIC VIEW ============ -->
+<div id="public-view">
+<header class="sticky top-0 z-40 border-b border-dark bg-navy-
